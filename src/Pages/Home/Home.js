@@ -5,16 +5,18 @@ import Services from './Services';
 import MiddleBanner from './MiddleBanner';
 import MakeAppointment from './MakeAppointment';
 import Testimonial from './Testimonial';
+import Footer from '../Shared/Footer';
 
 const Home = () => {
     return (
-        <div className=' lg:px-12'>
+        <div className=''>
             <Banner></Banner>
             <Info></Info>
             <Services></Services>
             <MiddleBanner></MiddleBanner>
             <MakeAppointment></MakeAppointment>
             <Testimonial></Testimonial>
+            <Footer></Footer>
         </div>
     );
 };

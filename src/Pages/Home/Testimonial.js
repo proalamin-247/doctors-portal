@@ -31,7 +31,7 @@ const Testimonial = () => {
     ];
 
     return (
-        <div className='my-12'>
+        <div className='my-12 p-5'>
             <div className='flex justify-between'>
                 <div>
                     <h3 className='text-xl text-primary font-bold py-2'>Testimonial</h3>
