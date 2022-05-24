@@ -14,7 +14,7 @@ const BookingModal = ({ treatment, date, setTreatment }) => {
         const slot = event.target.slot.value;
         const booking = {
             treatmentId: _id,
-            treatmentName: name,
+            treatment: name,
             date: formattedDate,
             slot,
             patient: user.email,
@@ -22,7 +22,7 @@ const BookingModal = ({ treatment, date, setTreatment }) => {
             phone: event.target.phone.value
         }
 
-        fetch('http://localhost:5000/booking', {
+        fetch('http://localhost:5001/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
