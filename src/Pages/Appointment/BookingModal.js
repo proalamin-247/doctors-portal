@@ -40,8 +40,6 @@ const BookingModal = ({ treatment, date, setTreatment, refetch }) => {
                 setTreatment(null);
                 refetch();
             });
-
-        
     }
 
     return (

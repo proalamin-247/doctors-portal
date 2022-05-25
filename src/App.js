@@ -25,14 +25,12 @@ function App() {
             <Appointment></Appointment>
           </RequierAuth>
         }></Route>
-        <Route path='/dashboard' element={
-          <RequierAuth>
-            <Dashboard></Dashboard>
-          </RequierAuth>
-        }>
+        
+        <Route path='/dashboard' element={<RequierAuth><Dashboard></Dashboard></RequierAuth>}>
           <Route index element={<MyAppoinments></MyAppoinments>}></Route>
           <Route path="review" element={<MyReview></MyReview>}></Route>
         </Route>
+
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signUp' element={<SignUp></SignUp>}></Route>
