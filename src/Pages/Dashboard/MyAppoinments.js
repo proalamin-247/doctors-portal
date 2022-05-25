@@ -12,7 +12,7 @@ const MyAppoinments = () => {
        if(user){
            fetch(`http://localhost:5001/booking?patient=${user.email}`)
                .then(res => res.json())
-               .then(data => setAppointments);
+               .then(data => setAppointments(data));
        }
     }, [user])
 
